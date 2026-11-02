@@ -40,8 +40,6 @@ Locators use element IDs, labels and roles. Waits rely on Playwright's built-in 
 
 ### Results
 - 1st run: **1 passed** (2.63 s)
-- 3 more runs: **1 passed** each time (~0.6 s)
-- One extra order was placed during the MCP exploration (`order-1793221280681-540`). Every test run creates a real order in the local app.
 
 ## 3. How to run (current Python setup)
 
