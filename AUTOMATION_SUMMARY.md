@@ -22,7 +22,8 @@ Steps:
 | File | Purpose |
 |---|---|
 | `playwright_tests/conftest.py` | pytest fixtures: Chromium browser, a fresh browser context per test, base URL from `PIZZA_BASE_URL`, `HEADLESS` setting, 10 s wait timeout. |
-| `playwright_tests/test_pizza_order_happy_path.py` | The end-to-end happy path test. |
+| `playwright_tests/pages/pizza_order_page.py` | Page Object Model (`PizzaOrderPage`, per [playwright.dev/docs/pom](https://playwright.dev/python/docs/pom)): all locators and user actions for the menu, cart, checkout and confirmation. |
+| `playwright_tests/test_pizza_order_happy_path.py` | The end-to-end happy path test, written against `PizzaOrderPage`. |
 
 `.env` and `requirments.txt` were not changed.
 
